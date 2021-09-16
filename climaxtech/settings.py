@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-6tja(%b(wrmvy))lhyytepz^c1!^%($u%$+-h!$146rqj#l3&=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'https://climaxtech.herokuapp.com/', 'climaxtech.herokuapp.com'
+                 , 'www.climaxtech.herokuapp.com']
 
 
 # Application definition
