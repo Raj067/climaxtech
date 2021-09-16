@@ -1,0 +1,131 @@
+/* Enter Your Custom CSS Here */
+/* ------------------- Work Step ------------------------ */
+
+.work-step-main ul {	float: left;	width: 100%;	display: flex;	flex-wrap: wrap;	justify-content: center;  list-style-type: none;}
+.work-step-main ul li {	float: left;	width: calc(100% / 3);  }
+.work-step {	width: 79%;	border-left: 2px solid rgba(255, 96, 0, 1);	padding: 40px 38px 49px;	position: relative;height:190px;}
+.work-step:before {	content: '';	position: absolute;	bottom: 0;	left: 0;	width: 21px;	height: 2px;	background-color: rgba(255, 96, 0, 1);}
+.work-step-main ul li:nth-child(1) .work-step:before, 
+.work-step-main ul li:nth-child(2) .work-step:before, 
+.work-step-main ul li:nth-child(3) .work-step:before {	top: 0;	bottom: auto;} 
+.work-step-main ul li:nth-child(1) .work-step, 
+.work-step-main ul li:nth-child(2) .work-step, 
+.work-step-main ul li:nth-child(3) .work-step {	border-bottom: 2px solid rgba(255, 96, 0, 1);} 
+.work-step-main ul li:nth-child(1) .work-step:after, 
+.work-step-main ul li:nth-child(2) .work-step:after, 
+.work-step-main ul li:nth-child(3) .work-step:after {	bottom: -13px;	top: auto;} 
+.work-step:after {	content: '';	position: absolute;	top: -31px;	left: -13px;	width: 24px;	height: 24px;	border:2px solid;	background: #fff;	z-index: 9;
+-webkit-border-radius: 50%;	-moz-border-radius: 50%;	-ms-border-radius: 50%;	-o-border-radius: 50%;	border-radius: 50%;}
+.work-step-no {	position: absolute;	bottom: 45px;	right: 96px;	font-size: 26px;	font-weight: 700;color: #7c10f7;}
+.work-step > h3 {	color: rgba(255, 96, 0, 1);	font-size: 24px;	font-weight: 700;	margin-bottom: 10px;	max-width: 210px;}
+.work-step > p {	color: #070c1f;	font-size: 15px;	line-height: 21px;	max-width: 210px;	font-weight: 500;}
+.work-step-main{padding-top: 4%;}
+
+/* ----------------------- Work Step end ----------------------- */
+
+.scl-cls{color:#CB2334; font-weight:700; font-size:25px; line-height: 30px; margin-bottom:5px;}
+.scl-txt-cls{font-size: 20px;color: rgba(255, 96, 0, 1);}
+.org-btn{color: #fff;background-color: rgba(255, 96, 0, 1); padding: 8px 18px;}
+.org-btn:hover{text-decoration: none; color: #fff;}
+
+
+
+@media screen and (max-width: 1210px) {
+	.work-step-no{right: 15px;}
+	.work-step > h3, .work-step > p{max-width: 80%;}
+	.work-step-main ul li {  width: calc(95% / 3);}
+	.work-step-main ul{margin-left: 0;}
+}
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (max-width: 1000px) {
+	h1{font-size: 2.5em !important;}
+	h2{font-size: 2.5em !important;}
+}
+
+@media screen and (max-width: 960px) {
+	
+	.work-step-no{right: 25px;}
+	.work-step > h3{ font-size: 18px; line-height: 22px;}
+	.work-step > p{ font-size: 14px; line-height: 20px;}
+	.work-step-main ul li {  width: calc(95% / 3);}	
+	.work-step > h3, .work-step > p{max-width: 75%;}
+}
+
+@media screen and (max-width: 800px) {
+	
+}
+
+@media screen and (max-width: 760px) {
+	
+	.work-step-no{right: 35px;}
+	.work-step > h3{ font-size: 14px; line-height: 18px;}
+	.work-step > p{ font-size: 10px; line-height: 13px;}
+	.work-step{height: 120px;}
+}
+
+@media screen and (max-width: 680px) {
+	
+	.work-step-no{right: 4px; font-size:12px;}
+	.work-step > h3{ font-size: 12px; line-height: 16px;}
+	.work-step > p{ font-size: 9px; line-height: 12px;}
+	.work-step{height: 120px; padding: 10%}
+	h1{font-size: 2em !important;}
+	h2{font-size: 2em !important;}
+	.lft-rght-gap-row .module_column{width: 100% !important;}
+	
+	.home-row-three .last .module-plain-text{padding: 0 5%;}
+	.home-row-four .first .module-plain-text{padding: 0 5%;}
+	.home-row-four .first{padding: 0 0 2% 0 !important;}
+	.home-row-four .row_inner .col4-2:nth-of-type(1) { order: 2; }
+.home-row-four .row_inner .col4-2:nth-of-type(2) { order: 1; }
+	.home-row-four .row_inner {-ms-box-orient: horizontal;  display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -moz-flex;  display: -webkit-flex;  -webkit-flex-flow: row wrap;  flex-flow: row wrap;}
+.home-row-five .last .module-plain-text{padding: 0 5%;}
+	.home-row-seven{padding-top: 0 !important;}
+	.home-row-nine{margin-top: -60% !important;}
+	.contact-row-two .module_column.col3-1, .contact-row-two .module_column.col3-2{width: 100% !important; margin-bottom:10px;}
+}
+
+@media screen and (max-width: 600px) {	
+	h1{font-size: 1.5em !important;}
+	h2{font-size: 1.3em !important;}
+	.home-row-one h1{padding-top: 8%;}
+	.home-row-one h4{font-size: 0.7em !important;}
+}
+
+@media screen and (max-width: 520px) {
+	
+}
+
+@media screen and (max-width: 480px) {
+	.work-step:after {width: 10px; height: 10px; left:-8px;top: -10px;}
+	.work-step-main ul li:nth-child(1) .work-step:after, 
+.work-step-main ul li:nth-child(2) .work-step:after, 
+.work-step-main ul li:nth-child(3) .work-step:after {	bottom: -5px;	top: auto;} 
+	.work-step-main ul li{margin-bottom: 0;}	
+	.work-step > h3{ font-size: 10px; line-height: 14px;}
+	.work-step > p{ font-size: 8px; line-height: 12px;}
+	.work-step{height: 150px; padding: 10%}
+	
+	h1{font-size: 1.1em !important;}
+	.home-row-one h1{padding-top:25%;}
+	.home-row-one h4{font-size: 0.6em !important;}
+}
+
+@media screen and (max-width: 420px) {
+	.work-step > h3{ font-size: 8px; line-height: 10px;}
+	.work-step > p{ font-size: 6px; line-height: 10px;}
+	
+}
+@media screen and (max-width: 380px) {	
+	.home-row-one h1{padding-top:45%; font-size: 0.9em !important;}
+	.home-row-one h4{font-size: 0.6em !important;}
+}
+
+@media screen and (max-width: 320px) {
+	
+}
+
