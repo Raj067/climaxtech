@@ -142,4 +142,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # middleware’s behaviour, actual
 # domain and subdomain will be addede
-# CORS_ALLOWED_ORIGINS = ALLOWED_HOSTS
+CORS_ALLOWED_ORIGINS = ALLOWED_HOSTS
