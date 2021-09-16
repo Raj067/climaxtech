@@ -216,9 +216,10 @@
                                                         class="module module-contact contact-15-1-1-1 contact-animated-label   tb_tbup48">
 
 
-                                                        <form
-                                                            class="builder-contact" id="contact-15-1-1-1-form"
-                                                            method="post" data-post-id="15" data-element-id="tbup48">
+                                                        <form id="contact_form"
+                                                            class="builder-contact" 
+                                                            method="post" action="/contact-us/">
+                                                            {% csrf_token %}
                                                             <div class="contact-message"></div>
                                                             <div class="builder-contact-fields">
                                                                 <div class="builder-contact-field builder-contact-field-name builder-contact-text-field"
@@ -228,9 +229,9 @@
                                                                             class="tb-label-span">Name </span><span
                                                                             class="required">*</span></label>
                                                                     <div class="control-input">
-                                                                        <input type="text" name="contact-name"
+                                                                        <input type="text" name="name"
                                                                             placeholder=""
-                                                                            id="contact-15-1-1-1-contact-name" value=""
+                                                                            id="i1" value=""
                                                                             class="form-control" required />
                                                                     </div>
                                                                 </div>
@@ -241,9 +242,9 @@
                                                                             class="tb-label-span">Phone number </span><span
                                                                             class="required">*</span></label>
                                                                     <div class="control-input">
-                                                                        <input type="tel" name="contact-email"
+                                                                        <input type="tel" name="phone_number"
                                                                             placeholder=""
-                                                                            id="contact-15-1-1-1-contact-email" value=""
+                                                                            id="i2" value=""
                                                                             class="form-control" required />
                                                                     </div>
                                                                 </div>
@@ -255,8 +256,8 @@
                                                                             class="tb-label-span">Message </span><span
                                                                             class="required">*</span></label>
                                                                     <div class="control-input">
-                                                                        <textarea name="contact-message" placeholder=""
-                                                                            id="contact-15-1-1-1-contact-message"
+                                                                        <textarea name="message" placeholder=""
+                                                                            id="i3"
                                                                             rows="8" cols="45" class="form-control"
                                                                             required></textarea>
                                                                     </div>
@@ -273,7 +274,42 @@
                                                             </div>
                                                             
                                                         </form>
+                                                        <script>
+                                                            let contactForm = document.getElementById('contact_form')
+                                                            contactForm.addEventListener('submit', function (e) {
+                                                                e.preventDefault();
+                                                                let thisForm = e.target
+                                                                const method = thisForm.getAttribute('method');
+                                                                const endpoint = thisForm.getAttribute('action');
+                                                                let data = new FormData(thisForm);
+                                                                let xhr = new XMLHttpRequest();
+                                                                xhr.open('post', endpoint, true);
+                                                                // console.log(thisForm)
+                                                                // // const csrftoken = getCookie('csrftoken');
+                                                                // // xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                                                                xhr.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest')
+                                                                xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+                                                                xhr.responseText = 'json'
+                                                                xhr.onload = () => {
 
+                                                                }
+                                                                
+                                                                i1 = document.getElementById('i1')
+                                                                i2 = document.getElementById('i2')
+                                                                i3 = document.getElementById('i3')
+
+                                                                i1.value = ''
+                                                                i2.value = ''
+                                                                i3.value = ''
+                                                                alert('Your comment has been sent successfully')
+                                                                xhr.onerror = () => {
+                                                                    alert('There is an error')
+                                                                    // console.log(xhr.error)
+                                                                }
+                                                                xhr.send(data)
+
+                                                            })
+                                                        </script>
                                                     </div>
                                                     <!-- /module contact -->
                                                 </div>

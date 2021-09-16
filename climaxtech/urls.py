@@ -22,5 +22,5 @@ urlpatterns = [
     path('contact-us/', contact, name='contact'),
     path('about-us/', about, name='about'),
     path('services/', services, name='services'),
-    path('admin/', admin.site.urls),
+    path('admin/climaxtech/', admin.site.urls),
 ]
