@@ -1,1 +1,1 @@
-web: gunicorn carbon.wsgi --log-file -
+web: gunicorn climaxtech.wsgi --log-file -
