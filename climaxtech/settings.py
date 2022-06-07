@@ -26,7 +26,7 @@ SECRET_KEY = 'dxsjdsngzxkno-ilodz(wrmv-rajabu-mrisho-y))lhyytepz^c1!^%($u%$+-h!$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://climax-technology.herokuapp.com/',
+ALLOWED_HOSTS = ['climax-technology.herokuapp.com', 'https://climax-technology.herokuapp.com/',
                  'climax-technology.herokuapp.com/', 'www.climax-technology.herokuapp.com/']
 
 
