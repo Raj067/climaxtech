@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'dxsjdsngzxkno-ilodz(wrmv-rajabu-mrisho-y))lhyytepz^c1!^%($u%$+-h!$146rqj#l3&='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'https://climax-technology.herokuapp.com/',
                  'climax-technology.herokuapp.com/', 'www.climax-technology.herokuapp.com/']
